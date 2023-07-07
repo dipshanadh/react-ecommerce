@@ -25,13 +25,13 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "cart", element: <Cart /> },
       { path: "checkout", element: <Checkout /> },
-      { path: "login", element: <Login /> },
       { path: "orders", element: <Orders /> },
       { path: "products", element: <Products /> },
       { path: "products/:id", element: <Product /> },
-      { path: "register", element: <Register /> },
     ],
   },
+  { path: "/login", element: <Login /> },
+  { path: "/register", element: <Register /> },
 ]);
 
 const App = () => {
