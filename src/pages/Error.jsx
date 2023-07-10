@@ -5,7 +5,7 @@ const Error = () => {
 
   if (error.status === 404) {
     return (
-      <main className="grid min-h-screen place-items-center px-4">
+      <main className="grid min-h-screen place-items-center p-4">
         <div className="text-center">
           <p className="text-9xl font-semibold text-primary">404</p>
           <h1 className="text-3xl font-bold tracking-tight mt-4 sm:text-5xl">

@@ -3,10 +3,11 @@ import { FormInput, SubmitBtn } from "../components";
 
 const Login = () => {
   return (
-    <main className="grid min-h-screen place-items-center px-4">
+    <main className="grid min-h-screen place-items-center p-4">
       <Form
         method="post"
-        className="card w-full max-w-sm p-4 bg-base border border-neutral shadow-lg flex flex-col gap-y-4">
+        className="card w-full max-w-sm p-4 bg-base-100 border border-neutral shadow-lg space-y-4"
+      >
         <h4 className="text-center text-3xl font-bold">Login</h4>
 
         <FormInput
@@ -33,7 +34,8 @@ const Login = () => {
           Don't have an account?{" "}
           <Link
             to="/register"
-            className="link link-hover link-primary underline">
+            className="link link-hover link-primary underline"
+          >
             Register
           </Link>
         </p>

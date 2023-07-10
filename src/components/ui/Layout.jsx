@@ -6,7 +6,9 @@ const Layout = () => {
       <nav>
         <span className="tet-4xl text-primary">MK Store</span>
       </nav>
-      <Outlet />
+      <main className="align-element py-20">
+        <Outlet />
+      </main>
     </>
   );
 };
