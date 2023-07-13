@@ -1,11 +1,17 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { BsCart3, BsMoonFill, BsSunFill } from "react-icons/bs";
-import { FaBarsStaggered } from "react-icons/fa6";
+import { Bars3CenterLeft, Moon, ShoppingBag, Sun } from "../icons";
 
 import NavLinks from "./Navlinks";
 
 const Navbar = () => {
+  const [theme, setTheme] = useState(false);
+
+  const handleTheme = () => {
+    setTheme(!theme);
+  };
+
   return (
     <nav className="bg-base-200">
       <div className="navbar align-element">
@@ -21,7 +27,7 @@ const Navbar = () => {
           {/* Dropdown */}
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <FaBarsStaggered className="h-6 w-6" />
+              <Bars3CenterLeft />
             </label>
 
             <ul
@@ -39,14 +45,25 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end gap-4">
           {/* Theme icons */}
+          <label className="swap swap-rotate">
+            {/* this hidden checkbox controls the state */}
+            <input type="checkbox" />
+
+            <span className="swap-on">
+              <Moon />
+            </span>
+            <span className="swap-off">
+              <Sun />
+            </span>
+          </label>
 
           {/* Cart Link */}
-          <NavLink to="/cart" className="btn btn-ghost btn-circle btn-md">
+          <NavLink to="/cart">
             <div className="indicator">
-              <BsCart3 className="h-6 w-6" />
-              <span className="badge badge-sm badge-primary indicator-item">
+              <ShoppingBag />
+              <span className="badge badge-sm badge-primary indicator-item indicator-bottom">
                 8
               </span>
             </div>

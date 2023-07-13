@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Layout } from "./components/ui";
+import Layout from "./components/Layout";
 
 import {
   About,

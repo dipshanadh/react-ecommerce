@@ -1,5 +1,6 @@
 import { Form, Link } from "react-router-dom";
-import { FormInput, SubmitBtn } from "../components";
+
+import { FormInput, SubmitBtn } from "../components/form";
 
 const Login = () => {
   return (
@@ -10,32 +11,20 @@ const Login = () => {
       >
         <h4 className="text-center text-3xl font-bold">Login</h4>
 
-        <FormInput
-          defaultValue="test@test.com"
-          label="Email"
-          name="identifier"
-          type="email"
-        />
-        <FormInput
-          defaultValue="secret"
-          label="Password"
-          name="password"
-          type="Password"
-        />
+        <FormInput label="Email" name="identifier" type="email" />
+        <FormInput label="Password" name="password" type="Password" />
 
         <div className="mt-4">
           <SubmitBtn />
         </div>
+        <div className="divider">OR</div>
         <button type="button" className="btn btn-block btn-secondary">
           Guest user
         </button>
 
         <p className="text-center">
           Don't have an account?{" "}
-          <Link
-            to="/register"
-            className="link link-hover link-primary underline"
-          >
+          <Link to="/register" className="link link-hover link-primary">
             Register
           </Link>
         </p>

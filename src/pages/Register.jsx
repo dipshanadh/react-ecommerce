@@ -1,5 +1,6 @@
 import { Form, Link } from "react-router-dom";
-import { FormInput, SubmitBtn } from "../components";
+
+import { FormInput, SubmitBtn } from "../components/form";
 
 const Register = () => {
   return (
@@ -20,7 +21,7 @@ const Register = () => {
 
         <p className="text-center">
           Already have an account?{" "}
-          <Link to="/login" className="link link-hover link-primary underline">
+          <Link to="/login" className="link link-hover link-primary">
             Login
           </Link>
         </p>
