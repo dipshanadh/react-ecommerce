@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import { Header, Navbar } from "./ui";
+import { Header, Navbar, Footer } from "./ui";
 
 const Layout = () => {
   return (
@@ -10,6 +10,7 @@ const Layout = () => {
       <main className="align-element py-20">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };

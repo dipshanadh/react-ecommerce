@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <main className="grid min-h-screen place-items-center p-4">
       <Form
-        method="post"
+        method="POST"
         className="card w-full max-w-sm p-4 bg-base-100 border border-neutral shadow-lg space-y-4"
       >
         <h4 className="text-center text-3xl font-bold">Login</h4>
