@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-neutral py-2 text-neutral-content">
-      <div className="align-element flex items-center">
+    <header className="bg-neutral text-neutral-content">
+      <div className="align-element py-2 flex items-center">
         <p className="mr-auto hidden sm:block">
           Buy Genuine Computer Parts at Best Price in Nepal
         </p>

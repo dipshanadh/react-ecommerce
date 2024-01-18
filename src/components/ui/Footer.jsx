@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-neutral text-neutral-content">
-        <p className="align-element py-4 flex items-center">
+        <p class="align-element py-4 flex items-center">
           Copyright © 2024 MK Store Pvt. Ltd. All rights reserved.
         </p>
       </div>

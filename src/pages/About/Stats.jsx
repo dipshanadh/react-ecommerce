@@ -1,6 +1,6 @@
 const Stats = () => {
   return (
-    <div className="stats w-full mt-16">
+    <div className="stats stats-vertical lg:stats-horizontal w-full mt-16">
       <div className="stat place-items-center">
         <div className="stat-title">Orders</div>
         <div className="stat-value">31K</div>
