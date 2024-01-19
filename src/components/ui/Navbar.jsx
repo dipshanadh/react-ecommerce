@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import { Bars3CenterLeft, Moon, ShoppingBag, Sun } from "../icons";
 
-import NavLinks from "./Navlinks";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(false);
