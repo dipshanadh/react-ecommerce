@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { ShoppingCart } from "../icons";
+import { formatPrice } from "../../utils";
 
 const ProductCard = ({ id, title, price, image, description }) => {
   return (
@@ -13,11 +14,11 @@ const ProductCard = ({ id, title, price, image, description }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title capitalize">
-          {title}
-          <span className="badge badge-secondary ml-auto">${price}</span>
-        </h2>
-        <p className="my-4">{description.slice(0, 100)}...</p>
+        <h2 className="card-title capitalize">{title}</h2>
+        <span className="badge badge-secondary badge-lg">
+          {formatPrice(price)}
+        </span>
+        <p className="my-4">{description.slice(0, 125)}...</p>
 
         <div className="card-actions justify-between items-center">
           <Link to={`/products/${id}`} className="link link-accent">

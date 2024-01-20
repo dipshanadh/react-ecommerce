@@ -24,7 +24,7 @@ const Login = () => {
 
         <p className="text-center">
           Don't have an account?{" "}
-          <Link to="/register" className="link link-hover link-primary">
+          <Link to="/register" className="link link-accent  link-primary">
             Register
           </Link>
         </p>
