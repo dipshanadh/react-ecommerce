@@ -21,7 +21,10 @@ const ProductCard = ({ id, title, price, image, description }) => {
         <p className="my-4">{description.slice(0, 125)}...</p>
 
         <div className="card-actions justify-between items-center">
-          <Link to={`/products/${id}`} className="link link-accent">
+          <Link
+            to={`/products/${id}`}
+            className="link link-accent tracking-wide"
+          >
             Learn more
           </Link>
           <button className="btn btn-sm btn-ghost">

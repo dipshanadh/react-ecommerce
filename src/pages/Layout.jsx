@@ -7,7 +7,7 @@ const Layout = () => {
     <>
       <Header />
       <Navbar />
-      <main className="align-element py-20 space-y-24">
+      <main className="align-element py-20">
         <Outlet />
       </main>
       <Footer />

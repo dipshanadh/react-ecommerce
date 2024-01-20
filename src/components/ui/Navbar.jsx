@@ -55,7 +55,7 @@ const Navbar = () => {
           <NavLink to="/cart">
             <div className="indicator">
               <ShoppingBag />
-              <span className="badge badge-sm badge-primary indicator-item indicator-bottom">
+              <span className="badge badge-sm badge-primary indicator-item">
                 8
               </span>
             </div>
