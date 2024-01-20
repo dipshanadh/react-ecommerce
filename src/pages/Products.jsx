@@ -1,4 +1,4 @@
 const Products = () => {
-  return <div>Products</div>;
+  return <h1 className="text-4xl">Products</h1>;
 };
 export default Products;

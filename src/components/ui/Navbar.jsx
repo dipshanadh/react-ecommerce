@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { Bars3CenterLeft, Moon, ShoppingBag, Sun } from "../icons";
@@ -6,12 +5,6 @@ import { Bars3CenterLeft, Moon, ShoppingBag, Sun } from "../icons";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(false);
-
-  const handleTheme = () => {
-    setTheme(!theme);
-  };
-
   return (
     <nav className="bg-base-200">
       <div className="navbar align-element">
@@ -48,7 +41,6 @@ const Navbar = () => {
         <div className="navbar-end gap-4">
           {/* Theme icons */}
           <label className="swap swap-rotate">
-            {/* this hidden checkbox controls the state */}
             <input type="checkbox" />
 
             <span className="swap-on">

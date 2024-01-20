@@ -1,6 +1,6 @@
 const Stats = () => {
   return (
-    <div className="stats stats-vertical lg:stats-horizontal w-full mt-16">
+    <section className="stats stats-vertical lg:stats-horizontal w-full">
       <div className="stat place-items-center">
         <div className="stat-title">Orders</div>
         <div className="stat-value">31K</div>
@@ -15,7 +15,7 @@ const Stats = () => {
         <div className="stat-title">Products</div>
         <div className="stat-value">1,200</div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="hero bg-base-200">
+    <section className="hero bg-base-200">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">Welcome!</h1>
@@ -12,7 +12,7 @@ const Hero = () => {
           <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

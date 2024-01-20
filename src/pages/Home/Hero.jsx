@@ -9,7 +9,7 @@ const carouselImages = [
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
       <div>
         <h1 className="max-w-lg text-4xl font-bold sm:text-6xl">
           We are changing the way people shop!
@@ -25,7 +25,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div class="hidden lg:carousel carousel-center rounded-box p-4 space-x-4 bg-neutral">
+      <div className="hidden lg:carousel carousel-center rounded-box p-4 space-x-4 bg-neutral">
         {carouselImages.map(image => {
           return (
             <div key={image} className="carousel-item">
@@ -34,7 +34,7 @@ const Hero = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
